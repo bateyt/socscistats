@@ -36,4 +36,4 @@ us <- get_map('usa', zoom = 4)
 ggmap(us)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](/socscistatsfigure/source/2016-12-08-quick-maps-r/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-2-1.png)

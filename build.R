@@ -23,8 +23,8 @@ local({
     # you may want to adapt them to your own website
     knitr::opts_chunk$set(fig.path = sprintf('%s/', gsub('^.+/', '', d)))
     knitr::opts_knit$set(
-      base.dir = '',
-      base.url = ''
+      base.dir = '~/GitHub/socscistats/',
+      base.url = 'http://github.bateyt/socscistats/'
     )
   }
   knitr::opts_knit$set(width = 70)
