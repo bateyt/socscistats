@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Quick maps with R"
+author: "Trey Batey"
+date: "December 8, 2016"
+categories: [spatial, rstats]
+tags: [ggmaps, ggplot2]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+packs <- c('ggplot2', 'ggmap', 'ggvis', 'scales', 'dplyr', 'googlesheets', 'rgdal', 'spatial', 'maps', 'maptools', 'mapdata', 'raster', 'sp')
+lapply(packs, require, character.only = TRUE)
+```
+
+```{r}
+us <- get_map('usa', zoom = 4)
+ggmap(us)
+```
