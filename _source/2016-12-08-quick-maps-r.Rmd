@@ -22,3 +22,9 @@ lapply(packs, require, character.only = TRUE)
 us <- get_map('usa', zoom = 3)
 ggmap(us)
 ```
+Or, we can use the `maps` package and display a vector map of the U. S.
+
+```{r}
+us2 <- map("usa")
+ggplot(us2) + geom_polygon() 
+```

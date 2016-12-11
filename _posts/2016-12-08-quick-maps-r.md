@@ -37,3 +37,23 @@ ggmap(us)
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-2](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-2-1.png)
+Or, we can use the `maps` package and display a vector map of the U. S.
+
+
+{% highlight r %}
+us2 <- map("usa")
+{% endhighlight %}
+
+![plot of chunk unnamed-chunk-3](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-1.png)
+
+{% highlight r %}
+ggplot(us2) + geom_polygon() 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error: geom_polygon requires the following missing aesthetics: x, y
+{% endhighlight %}
+
+![plot of chunk unnamed-chunk-3](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-2.png)
