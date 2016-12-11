@@ -19,6 +19,6 @@ lapply(packs, require, character.only = TRUE)
 ```
 
 ```{r}
-us <- get_map('usa', zoom = 4)
+us <- get_map('usa', zoom = 3)
 ggmap(us)
 ```
