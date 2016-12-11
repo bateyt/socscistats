@@ -9,7 +9,7 @@ tags: [ggmaps, ggplot2]
 
 
 
-Social scientists commonly need to visualize data across geographic space. Fortunately, R has many packages and functions for quickly producing vector and raster-based maps.
+Social scientists commonly need to visualize data across geographic space. Fortunately, R has many packages and functions for quickly producing vector and raster-based maps. For example, with just two short lines of code, we can produce a map of the United States.
 
 
 

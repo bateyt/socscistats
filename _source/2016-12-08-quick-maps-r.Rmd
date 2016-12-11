@@ -11,10 +11,10 @@ tags: [ggmaps, ggplot2]
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Social scientists commonly need to visualize data across geographic space. Fortunately, R has many packages and functions for quickly producing vector and raster-based maps.
+Social scientists commonly need to visualize data across geographic space. Fortunately, R has many packages and functions for quickly producing vector and raster-based maps. For example, with just two short lines of code, we can produce a map of the United States.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
-packs <- c('ggplot2', 'ggmap', 'ggvis', 'scales', 'dplyr', 'googlesheets', 'rgdal', 'spatial', 'maps', 'maptools', 'mapdata', 'raster', 'sp')
+packs <- c('ggplot2', 'ggmap', 'ggvis', 'scales', 'dplyr', 'googlesheets', 'rgdal', 'spatial', 'maps', 'maptools', 'mapdata', 'raster', 'sp', 'mapproj')
 lapply(packs, require, character.only = TRUE)
 ```
 
