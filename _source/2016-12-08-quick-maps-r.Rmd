@@ -11,7 +11,7 @@ tags: [ggmaps, ggplot2]
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.align = "center")
 knitr::opts_chunk$set(fig.height = 7)
-knitr::opts_chunk$set(fig.width = 10)
+knitr::opts_chunk$set(fig.width = 12)
 ```
 
 Social scientists commonly need to visualize data across geographic space. Fortunately, R has many packages and functions for quickly producing vector and raster-based maps. For example, with just two short lines of code, we can produce a map of the United States.
