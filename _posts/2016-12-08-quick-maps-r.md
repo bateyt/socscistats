@@ -47,13 +47,7 @@ us2 <- map("usa")
 ![plot of chunk unnamed-chunk-3](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-1.png)
 
 {% highlight r %}
-ggplot(us2) + geom_polygon() 
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error: geom_polygon requires the following missing aesthetics: x, y
+ggplot(data = us2, aes(x = long, y = lat)) + geom_polygon() 
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-3](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-2.png)

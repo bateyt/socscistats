@@ -26,5 +26,5 @@ Or, we can use the `maps` package and display a vector map of the U. S.
 
 ```{r}
 us2 <- map("usa")
-ggplot(us2) + geom_polygon() 
+ggplot(data = us2, aes(x = long, y = lat)) + geom_polygon() 
 ```
