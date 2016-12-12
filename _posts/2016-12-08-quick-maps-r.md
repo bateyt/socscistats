@@ -36,7 +36,7 @@ us <- get_map('usa', zoom = 3)
 ggmap(us)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-2-1.png)
+<img src="/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 Or, we can use the `maps` package and display a vector map of the U. S.
 
 
@@ -44,10 +44,11 @@ Or, we can use the `maps` package and display a vector map of the U. S.
 us2 <- map("usa")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-3](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-1.png)
+<img src="/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 
 {% highlight r %}
-ggplot(data = us2, aes(x = long, y = lat)) + geom_polygon() 
+us2.df <- fortify(us2)
+ggplot(data = us2.df, aes(x = long, y = lat)) + geom_polygon() 
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-3](/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-2.png)
+<img src="/socscistats/figure/source/2016-12-08-quick-maps-r/unnamed-chunk-3-2.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />

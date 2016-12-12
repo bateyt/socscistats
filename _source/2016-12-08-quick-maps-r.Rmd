@@ -9,6 +9,9 @@ tags: [ggmaps, ggplot2]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.align = "center")
+knitr::opts_chunk$set(fig.height = 7)
+knitr::opts_chunk$set(fig.width = 10)
 ```
 
 Social scientists commonly need to visualize data across geographic space. Fortunately, R has many packages and functions for quickly producing vector and raster-based maps. For example, with just two short lines of code, we can produce a map of the United States.
@@ -26,5 +29,6 @@ Or, we can use the `maps` package and display a vector map of the U. S.
 
 ```{r}
 us2 <- map("usa")
-ggplot(data = us2, aes(x = long, y = lat)) + geom_polygon() 
+us2.df <- fortify(us2)
+ggplot(data = us2.df, aes(x = long, y = lat)) + geom_polygon() 
 ```
